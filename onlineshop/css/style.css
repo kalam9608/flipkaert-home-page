@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Rubik+Beastly&display=swap');
+:root{
+    --bgcolor:blue;
+}
+header{
+    background: var(--bgcolor);
+    height: 12vh;
+    color:white;
+}
+
+ul{
+    height: 12vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+ul li a{
+    margin-left: 20px;
+    padding: 0px 5px;
+    color:white;
+    text-decoration: none;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+nav ul li{
+    list-style: none;
+
+}
+nav{
+    height: 12vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+nav img{
+    width: 200px;
+    height: 30px;
+    margin: 0px 0px 0px 120px;
+   
+}
+.search input{
+    margin:0px 10px;
+    border-radius:20px;
+    /* border: 2px solid red; */
+    padding: 5px 10px;
+}
+button{
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.container{
+    min-height:calc(100vh - 12vh - 8vh);
+
+}
+.slider {
+    width: 80vw;
+    background: pink;
+    margin: auto;
+
+}
+
+.slider img {
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+footer{
+    height: 8vh;
+    background:var(--bgcolor);
+    color:white;
+}
+.foot{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik Beastly', cursive;
+}

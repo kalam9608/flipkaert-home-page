@@ -1,0 +1,48 @@
+@media screen and (max-width:800px) {
+
+    body{
+        background: rgb(28, 112, 53);
+    }
+}
+@media  (min-width:0px )and (max-width:800px) {
+
+    .container{
+        background:white;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        margin: 10px; 
+        justify-content: center;
+        align-items: center;
+    
+    }
+    img{
+        width: 200px;
+        height: 50px;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+        margin-top: -38px;
+    }
+    .search{
+        justify-content: center;
+        align-items: center;
+        margin-top: -30px;
+    }
+    nav .btn{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    
+    
+    
+    }

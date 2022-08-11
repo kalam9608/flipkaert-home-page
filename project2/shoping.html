@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoping store</title>
+    <link rel="stylesheet" href="css/style.css">
+<style>
+   .grid{
+       display: grid;
+       grid-gap: 2px 5px;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: 12vh 30vh 35vh 3vh;
+       grid-template-areas: 
+       'box1 box1 box1'
+       '. box2 .'
+       'box3 box2 box4 '
+       'box5 box5 box5';
+   }
+   #box1{
+       /* height: 10vh; */
+       grid-area: box1;
+   }
+   #box2{
+       grid-area: box2;
+
+   }
+   #box3{
+       grid-area: box3;
+
+   }
+   #box4{
+       grid-area: box4;
+   }
+   #box5{
+       grid-area: box5;
+   }
+   .box{
+       /* margin: 2px; */
+       background: red;
+   }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="css/6087f7f9e5ecc6e0633ecbc0_logo-example3.svg" alt=""></div>
+            <ul>
+                <li class="items"><a href="#">home</a></li>
+                <li class="items"><a href="#">about</a></li>
+                <li class="items"><a href="#">services</a></li>
+                <li class="items"><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <div class="container">
+           <div class="grid">
+               <div id="box1" class="box">
+                <ul>
+                    <li class="items"><a href="#">home</a></li>
+                    <li class="items"><a href="#">about</a></li>
+                    <li class="items"><a href="#">services</a></li>
+                    <li class="items"><a href="#">contact</a></li>
+                </ul>
+
+               </div>
+               <div id="box2" class="box">2</div>
+               <div id="box3" class="box">3</div>
+               <div id="box4" class="box">4</div>
+               <div id="box5" class="box">5</div>
+           </div>
+       </div>
+    
+    </main>
+
+    <footer>
+        <div class="foot">copyright&copy;mysite.com</div>
+
+    </footer>
+</body>
+
+</html>

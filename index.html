@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <style>
+        .grid{
+            display: grid;
+            grid-gap: 2px;
+            grid-template-columns:repeat(5,1fr);
+            grid-template-rows: 14fr 5.9fr .1fr;
+            grid-template-areas: 
+            'box1 box1 box1 box1 box1 '
+        
+            ;
+            
+        }
+        #box1{
+            grid-area: box1;
+            width: 80vw;
+            display: block;
+            margin: auto;
+            height: 58vh;
+            background-image: url("shoping.png");
+            /* background-size: contain; */
+            /* background-repeat: no-repeat; */
+            /* background: auto; */
+            /* background-size:80vw 50vh; */
+            background-size: cover;
+            
+        }
+        .items{
+            background: red;
+            /* margin: 2px; */
+            background-image: url("shop2.png");
+            background-size: cover;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="progress"></div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt=""></div>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+
+            <div class="search">
+    
+                <input type="text" placeholder="search items">
+            </div>
+            <div class="btn">
+
+                <input type="button" value="search">
+                <!-- <button>btmtyr</button> -->
+                <!-- <button class="btn">search</button> -->
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="grid">
+                <!-- <img src="shoping.png" alt="" class="img2"> -->
+                <div id="box1" class="items">1</div>
+                <div id="box2" class="items">2</div>
+                <div id="box3" class="items">3</div>
+                <div id="box4" class="items">4</div>
+                <div id="box5" class="items">5</div>
+                <div id="box6" class="items">6</div>
+                <!-- <div id="box7" class="items">7</div> -->
+                
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+
+        <p>copyright&copy;myonlineshop</p>
+
+    </footer>
+
+</body>
+
+</html>
